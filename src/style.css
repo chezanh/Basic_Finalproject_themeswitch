@@ -92,4 +92,7 @@ button:hover {
   font-size: 10px;
   margin-top: 10px;
   font-family: var(--secondary-font);
+  color: grey;
 }
+
+/*styling for the themeswitch*/
