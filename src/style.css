@@ -36,7 +36,7 @@ h2 {
   transition: all 150ms ease-in-out;
 }
 
-.row {
+.container {
   margin-bottom: 20px !important;
 }
 /*button styling*/
@@ -53,7 +53,7 @@ button:hover {
 }
 
 /* Style for the dark theme button */
-.darktheme {
+.themeButton {
   background-color: black;
   color: white;
   border: none;
@@ -79,7 +79,7 @@ button {
   text-transform: uppercase !important;
 }
 
-.darktheme:hover {
+.themeButton:hover {
   cursor: pointer;
   background-color: white;
   color: black;
@@ -99,11 +99,45 @@ button {
 
 /*styling for the themeswitch*/
 
-.dark {
+body.dark {
   background-color: black;
   color: white;
 }
 
-.dark p {
+body.dark h1,
+h2,
+p {
   color: white;
+}
+
+body.light {
+  background: white;
+  color: grey;
+}
+
+body.light h1,
+h2,
+p {
+  color: grey;
+}
+
+/*settings for mobile phone*/
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .col-4 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .gallery-photo {
+    width: 1005;
+    height: auto;
+  }
 }
