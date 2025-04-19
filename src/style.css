@@ -23,16 +23,12 @@ h2 {
 
 /*styling for the images*/
 
-.Marie-photo:hover,
-.cham-photo:hover,
-.hien-photo:hover {
+.gallery-photo:hover {
   transform: scale(1.2);
   filter: contrast(80%);
 }
 
-.Marie-photo,
-.cham-photo,
-.hien-photo {
+.gallery-photo {
   max-width: 100%;
   height: auto;
   display: block;
@@ -40,6 +36,9 @@ h2 {
   transition: all 150ms ease-in-out;
 }
 
+.row {
+  margin-bottom: 20px !important;
+}
 /*button styling*/
 
 button:hover {
@@ -80,8 +79,11 @@ button {
   text-transform: uppercase !important;
 }
 
-button:hover {
+.darktheme:hover {
   cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 150ms ease-in-out;
 }
 
 /*footer section*/
@@ -96,3 +98,12 @@ button:hover {
 }
 
 /*styling for the themeswitch*/
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.dark p {
+  color: white;
+}
